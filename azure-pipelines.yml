@@ -14,7 +14,7 @@ variables:
   functionAppName: 'fa-dev-vmss-jenny'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  vmImageName: 'scalesetpool'
 
   # Working Directory
   workingDirectory: '$(System.DefaultWorkingDirectory)/node/plain/functionApp/Application'
