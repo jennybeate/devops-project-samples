@@ -14,7 +14,7 @@ variables:
   functionAppName: 'fa-dev-vmss-jenny'
 
   # Agent VM image name
-  vmImageName: 'scalesetpool'
+  poolName: 'scalesetpool'
 
   # Working Directory
   workingDirectory: '$(System.DefaultWorkingDirectory)/node/plain/functionApp/Application'
@@ -27,7 +27,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: $(vmImageName)
+      name: $(poolName)
 
     steps:
     - bash: |
